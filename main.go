@@ -55,11 +55,33 @@ func sqrt(x float64) string {
 // 	// fmt.Println(x)
 // }
 
+// func main() {
+// 	a := 2
+// 	if a > 3 {
+// 		fmt.Println("hey")
+// 	} else {
+// 		fmt.Println("no")
+// 	}
+// }
+
 func main() {
-	a := 2
-	if a > 3 {
+	a := 100
+	if a > 100 {
 		fmt.Println("hey")
-	} else {
+	} else if a > 50 && a < 100 {
 		fmt.Println("no")
+	} else {
+		fmt.Println("Boom")
 	}
+
+	switch {
+	case a > 100:
+		fmt.Println("hey")
+	case a > 50 && a < 100:
+		fmt.Println("no")
+	default:
+		fmt.Println("Boom")
+
+	}
+
 }
