@@ -171,4 +171,9 @@ func main() {
 	d = append(d, 6)
 	fmt.Println(len(d), cap(d))
 
+	// access
+	fmt.Println(d[0])
+	cc := d[:3]
+	fmt.Println(cc)
+
 }
