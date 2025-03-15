@@ -1,9 +1,11 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
+
+// import (
+// 	"fmt"
+// 	"math"
+// )
 
 // func main() {
 // 	//
@@ -29,84 +31,112 @@ import (
 
 // }
 
-func sqrt(x float64) string {
-	if x < 0 {
-		return sqrt(-x) + "i"
-	}
-
-	return fmt.Sprint(math.Sqrt(x))
-}
-
-// func main() {
-
-// 	fmt.Println(sqrt(4), sqrt(-6))
-// }
-
-// func main() {
-
-// 	y := float64(4)
-
-// 	if x := sqrt(y); x == "2" {
-
-// 		fmt.Println("hhhh")
+// func sqrt(x float64) string {
+// 	if x < 0 {
+// 		return sqrt(-x) + "i"
 // 	}
 
-// 	// : undefined: x
-// 	// fmt.Println(x)
+// 	return fmt.Sprint(math.Sqrt(x))
 // }
 
+// // func main() {
+
+// // 	fmt.Println(sqrt(4), sqrt(-6))
+// // }
+
+// // func main() {
+
+// // 	y := float64(4)
+
+// // 	if x := sqrt(y); x == "2" {
+
+// // 		fmt.Println("hhhh")
+// // 	}
+
+// // 	// : undefined: x
+// // 	// fmt.Println(x)
+// // }
+
+// // func main() {
+// // 	a := 2
+// // 	if a > 3 {
+// // 		fmt.Println("hey")
+// // 	} else {
+// // 		fmt.Println("no")
+// // 	}
+// // }
+
 // func main() {
-// 	a := 2
-// 	if a > 3 {
+// 	a := 100
+// 	if a > 100 {
 // 		fmt.Println("hey")
-// 	} else {
+// 	} else if a > 50 && a < 100 {
 // 		fmt.Println("no")
+// 	} else {
+// 		fmt.Println("Boom")
 // 	}
+
+// 	switch {
+// 	case a > 100:
+// 		fmt.Println("hey")
+// 	case a > 50 && a < 100:
+// 		fmt.Println("no")
+// 	default:
+// 		fmt.Println("Boom")
+
+// 	}
+
+// 	s := "hello"
+// 	switch s {
+// 	case "helll":
+// 		fmt.Println("nop1")
+// 	case "helloooo":
+// 		fmt.Println("nop")
+// 	case "hello":
+// 		fmt.Println("Yesss")
+
+// 	}
+// 	a = 60
+// 	switch {
+// 	case a > 100:
+// 		fmt.Println("hey")
+// 	case a > 50 && a < 100:
+// 		fmt.Println("yesss")
+// 		fallthrough
+
+// 	case a > 50 && a < 70:
+// 		fmt.Println("yess2")
+// 	default:
+// 		fmt.Println("Boom")
+
+// 	}
+
 // }
 
 func main() {
-	a := 100
-	if a > 100 {
-		fmt.Println("hey")
-	} else if a > 50 && a < 100 {
-		fmt.Println("no")
-	} else {
-		fmt.Println("Boom")
+
+	type Student struct {
+		ID             uint
+		NationalNumber string
+		Age            uint
 	}
+	// declare a variable of type Student with Zero value for its fields
+	var u Student
+	fmt.Println(u.Age)
+	fmt.Println(u.NationalNumber)
 
-	switch {
-	case a > 100:
-		fmt.Println("hey")
-	case a > 50 && a < 100:
-		fmt.Println("no")
-	default:
-		fmt.Println("Boom")
+	var j = Student{
 
+		Age: 23,
 	}
+	fmt.Println(j.Age)
+	fmt.Println(j.NationalNumber)
 
-	s := "hello"
-	switch s {
-	case "helll":
-		fmt.Println("nop1")
-	case "helloooo":
-		fmt.Println("nop")
-	case "hello":
-		fmt.Println("Yesss")
-
-	}
-	a = 60
-	switch {
-	case a > 100:
-		fmt.Println("hey")
-	case a > 50 && a < 100:
-		fmt.Println("yesss")
-		fallthrough
-
-	case a > 50 && a < 70:
-		fmt.Println("yess2")
-	default:
-		fmt.Println("Boom")
-
-	}
+	var z = Student{10, "00555", 22}
+	fmt.Println(z.ID)
+	fmt.Println(z.Age)
+	fmt.Println(z.NationalNumber)
+	fmt.Println("Z Id is:", z.ID, "Z Age is:", z.Age)
+	fmt.Printf("Z Id is: %d Z Age is: %d National is %s", z.ID, z.Age, z.NationalNumber)
 
 }
