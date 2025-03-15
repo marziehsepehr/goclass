@@ -37,7 +37,21 @@ func sqrt(x float64) string {
 	return fmt.Sprint(math.Sqrt(x))
 }
 
+// func main() {
+
+// 	fmt.Println(sqrt(4), sqrt(-6))
+// }
+
 func main() {
 
-	fmt.Println(sqrt(4), sqrt(-6))
+	y := float64(4)
+
+	if x := sqrt(y); x == "2" {
+
+		fmt.Println("hhhh")
+	}
+
+	// : undefined: x
+	// fmt.Println(x)
+
 }
