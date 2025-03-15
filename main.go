@@ -113,30 +113,52 @@ import "fmt"
 
 // }
 
+// func main() {
+
+// 	type Student struct {
+// 		ID             uint
+// 		NationalNumber string
+// 		Age            uint
+// 	}
+// 	// declare a variable of type Student with Zero value for its fields
+// 	var u Student
+// 	fmt.Println(u.Age)
+// 	fmt.Println(u.NationalNumber)
+
+// 	var j = Student{
+
+// 		Age: 23,
+// 	}
+// 	fmt.Println(j.Age)
+// 	fmt.Println(j.NationalNumber)
+
+// 	var z = Student{10, "00555", 22}
+// 	fmt.Println(z.ID)
+// 	fmt.Println(z.Age)
+// 	fmt.Println(z.NationalNumber)
+// 	fmt.Println("Z Id is:", z.ID, "Z Age is:", z.Age)
+// 	fmt.Printf("Z Id is: %d Z Age is: %d National is %s", z.ID, z.Age, z.NationalNumber)
+
+// }
+
 func main() {
+	// Arrays
 
-	type Student struct {
-		ID             uint
-		NationalNumber string
-		Age            uint
+	var a [6]int
+	a = [6]int{1, 3, 2, 5, 7, 8}
+	for index, value := range a {
+		fmt.Println(index, value)
 	}
-	// declare a variable of type Student with Zero value for its fields
-	var u Student
-	fmt.Println(u.Age)
-	fmt.Println(u.NationalNumber)
 
-	var j = Student{
+	// Slice(Dynamic Array)
+	var b []int
+	// builtin function
+	b = append(b, 5)
+	fmt.Println(cap(b))
+	fmt.Println(len(b))
 
-		Age: 23,
-	}
-	fmt.Println(j.Age)
-	fmt.Println(j.NationalNumber)
-
-	var z = Student{10, "00555", 22}
-	fmt.Println(z.ID)
-	fmt.Println(z.Age)
-	fmt.Println(z.NationalNumber)
-	fmt.Println("Z Id is:", z.ID, "Z Age is:", z.Age)
-	fmt.Printf("Z Id is: %d Z Age is: %d National is %s", z.ID, z.Age, z.NationalNumber)
+	c := make([]int, 5, 10)
+	fmt.Println(cap(c))
+	fmt.Println(len(c))
 
 }
