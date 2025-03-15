@@ -161,4 +161,14 @@ func main() {
 	fmt.Println(cap(c))
 	fmt.Println(len(c))
 
+	d := make([]int, 5)
+	fmt.Println(cap(d))
+	fmt.Println(len(d))
+
+	d = []int{1, 2, 3, 4, 5}
+	fmt.Println(len(d), cap(d))
+
+	d = append(d, 6)
+	fmt.Println(len(d), cap(d))
+
 }
