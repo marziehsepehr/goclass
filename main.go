@@ -92,6 +92,21 @@ func main() {
 		fmt.Println("nop")
 	case "hello":
 		fmt.Println("Yesss")
+
+	}
+	a = 60
+	switch {
+	case a > 100:
+		fmt.Println("hey")
+	case a > 50 && a < 100:
+		fmt.Println("yesss")
+		fallthrough
+
+	case a > 50 && a < 70:
+		fmt.Println("yess2")
+	default:
+		fmt.Println("Boom")
+
 	}
 
 }
