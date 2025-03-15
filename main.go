@@ -42,16 +42,24 @@ func sqrt(x float64) string {
 // 	fmt.Println(sqrt(4), sqrt(-6))
 // }
 
+// func main() {
+
+// 	y := float64(4)
+
+// 	if x := sqrt(y); x == "2" {
+
+// 		fmt.Println("hhhh")
+// 	}
+
+// 	// : undefined: x
+// 	// fmt.Println(x)
+// }
+
 func main() {
-
-	y := float64(4)
-
-	if x := sqrt(y); x == "2" {
-
-		fmt.Println("hhhh")
+	a := 2
+	if a > 3 {
+		fmt.Println("hey")
+	} else {
+		fmt.Println("no")
 	}
-
-	// : undefined: x
-	// fmt.Println(x)
-
 }
