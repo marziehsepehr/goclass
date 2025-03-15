@@ -84,4 +84,14 @@ func main() {
 
 	}
 
+	s := "hello"
+	switch s {
+	case "helll":
+		fmt.Println("nop1")
+	case "helloooo":
+		fmt.Println("nop")
+	case "hello":
+		fmt.Println("Yesss")
+	}
+
 }
