@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 )
 
@@ -15,7 +16,9 @@ func main() {
 		name := args[1]
 		fmt.Println(name)
 	} else {
-		fmt.Println("At least one argument is needed")
+		fmt.Println("error: At least one argument is needed")
+		os.Exit(1)
+		
 	}
 
 }
