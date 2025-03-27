@@ -60,7 +60,8 @@ func main() {
 	// fmt.Scanln(&fname, &lname)
 	// fmt.Println(fname, lname)
 
-	// get parammeter by echo or csv as input - ex: echo "2025, 03, 27"| go run main.go
+	// get parammeter by echo or csv as input - ex: echo "2025, 03, 27"| go run main.go   or cat input.txt | go run main.go
+
 	var a, b, c int
 	fmt.Println("Enter three numbers with comma seperated")
 
