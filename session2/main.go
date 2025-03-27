@@ -42,17 +42,30 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 )
 
 func main() {
-	firstName := flag.String("first_name", "default", "first name")
-	lastName := flag.String("last_name", "default", "last name")
+	// firstName := flag.String("first_name", "default", "first name")
+	// lastName := flag.String("last_name", "default", "last name")
 
-	flag.Parse()
-	fmt.Println("name", *firstName, *lastName, flag.Args())
+	// flag.Parse()
+	// fmt.Println("name", *firstName, *lastName, flag.Args())
 
-	fmt.Println("len of remaining args", len(flag.Args()))
+	// fmt.Println("len of remaining args", len(flag.Args()))
+
+	// var fname, lname string
+	// fmt.Println("Enter first name and last name")
+
+	// fmt.Scanln(&fname, &lname)
+	// fmt.Println(fname, lname)
+
+	// get parammeter by echo or csv as input - ex: echo "2025, 03, 27"| go run main.go
+	var a, b, c int
+	fmt.Println("Enter three numbers with comma seperated")
+
+	fmt.Scanf("%d, %d, %d", &a, &b, &c)
+	fmt.Println("Your numbers are:")
+	fmt.Println(a, b, c)
 
 }
