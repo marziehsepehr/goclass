@@ -7,7 +7,7 @@ func prt(values ...string) {
 		fmt.Println(value)
 
 	}
-}
+} 
 
 func main() {
 	prt("Hello", "World", "Go", "is", "awesome")
