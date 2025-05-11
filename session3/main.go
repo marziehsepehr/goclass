@@ -59,11 +59,20 @@ func main() {
 	s.PrintName()
 	// s.printID()
 
-	
 	var a [4]int
+	// if a == nil {
+	// 	fmt.Println("a is nil")
+
+	// }
 	fmt.Println(len(a[:2]))
 	fmt.Println(cap(a[:2]))
 
 	fmt.Println(len(a[2:]))
 	fmt.Println(cap(a[2:]))
+	fmt.Println("This is a ")
+
+	for index, value := range a {
+		fmt.Printf("index:%d ", index)
+		fmt.Printf("value:%d \n", value)
+	}
 }
