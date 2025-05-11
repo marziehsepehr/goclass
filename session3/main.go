@@ -44,7 +44,11 @@
 
 package main
 
-import "gocasts.ir/go-fundamentals/repo/sessions/session3/student"
+import (
+	"fmt"
+
+	"gocasts.ir/go-fundamentals/repo/sessions/session3/student"
+)
 
 func main() {
 	s := student.Student{}
@@ -55,4 +59,11 @@ func main() {
 	s.PrintName()
 	// s.printID()
 
+	
+	var a [4]int
+	fmt.Println(len(a[:2]))
+	fmt.Println(cap(a[:2]))
+
+	fmt.Println(len(a[2:]))
+	fmt.Println(cap(a[2:]))
 }
