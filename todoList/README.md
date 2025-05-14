@@ -1,44 +1,43 @@
-Steps :
+Steps:
 
-1- define entities
-Entities :
-    Task
-    Category
-    User
+1. Define entities  
+   Entities:  
+   - Task  
+   - Category  
+   - User  
 
+2. Define properties and behaviors for each entity  
 
-2- define properties and behaviors for each Entity
+### Task:
+**Properties:**  
+- Title  
+- Due Date  
+- Category  
+- Is Done  
 
-Task:
-    Properties:
-        -Title
-        -DueDate
-        -Category
-        -IsDone
+**Behaviors:**  
+- Create a new task  
+- List user's tasks for today  
+- List user's tasks by date  
+- Change task status (done/undone)  
+- Edit a task  
 
-    Behaviors:
-        -Create anew task
-        -List User today task
-        -List User tasks by Date
-        -Change tasks status(done/undone)
-        -Edit a task
+### User:
+**Properties:**  
+- ID  
+- Email  
+- Password  
 
-User:
-    Properties:
-        -ID
-        -Emai
-        -Pass
+**Behaviors:**  
+- Register  
+- Login  
 
-    Behaviors:
-        -Register
-        -Login
+### Category:
+**Properties:**  
+- Title  
+- Color  
 
-Category:
-    Properties:
-        -Title
-        -Color
-
-    Behaviors:
-        -setColor
-        -setTitle
+**Behaviors:**  
+- Set color  
+- Set title
 
