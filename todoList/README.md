@@ -38,6 +38,7 @@ Steps:
 - Color  
 
 **Behaviors:**  
-- Set color  
-- Set title
+- Create a new category 
+- List user categories with progresses
+- Edit a categoty 
 
