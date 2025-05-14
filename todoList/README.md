@@ -1,4 +1,5 @@
-Steps:
+### Business Requirements:
+
 
 1. Define entities  
    Entities:  
@@ -39,6 +40,6 @@ Steps:
 
 **Behaviors:**  
 - Create a new category 
-- List user categories with progresses
-- Edit a categoty 
+- List user categories with progress
+- Edit a category 
 
